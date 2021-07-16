@@ -1,56 +1,376 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" itemscope itemtype="https://schema.org/WebPage">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>calvellido.es</title>
-    <meta name="description" content="padel" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <meta property="og:title" content="calvellido" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://calvellido.es" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="padel" />
-    <meta property="og:site_name" content="calvellido.es" />
-    <meta property="article:author" content="Juan Valencia Calvellido" />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@calvellido" />
-    <meta name="twitter:creator" content="@calvellido" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="twitter:url"
-      content="https://twitter.com/calvellido"
+      name="description"
+      content="Organizador de torneo americano de pádel"
     />
-    <meta name="twitter:title" content="Juan Valencia Calvellido" />
-    <meta name="twitter:description" content="Juan Valencia Calvellido's Twitter account" />
-    <meta
-      name="twitter:image"
-      content="https://pbs.twimg.com/profile_banners/10539772/1414840977"
-    />
+    <meta name="author" content="Juan MV Calvellido" />
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png" />
+    <title>¡crúzame!</title>
 
-    <meta name="application-name" content="calvellido.es" />
-    <meta
-      name="msapplication-tooltip"
-      content="Juan Valencia Calvellido's personal site."
-    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <!--link href="css/bootstrap-table.min.css" rel="stylesheet"><!-- Bootstrap table-->
+    <!--link href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" rel="stylesheet"-->
+    <!--link href="//cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet"-->
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet" />
+    <!--link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"-->
+    <link href="css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <!--link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-    <meta name="google" content="notranslate" />
-
-    <link rel="canonical" href="https://calvellido.es">
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <link rel="author" href="">
-    <link rel="publisher" href="">
-    <meta itemprop="name" content="">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="">
-    <meta itemprop="url" content="">
-    <meta itemprop="about" content="padel">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <p>Hello world!</p>
+    <!-- CABECERA -->
+    <!--Barra de navegación-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#informacion">
+            <em>¡</em>crúzame<em>!</em>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#informacion"
+                ><span class="fa fa-info-circle"></span>&nbsp;&nbsp;información
+              </a>
+            </li>
+            <li>
+              <a href="#registro"
+                ><span class="fa fa-user"></span>&nbsp;&nbsp;registro
+              </a>
+            </li>
+            <li>
+              <a href="#cruces"
+                ><span class="fa fa-random"></span>&nbsp;&nbsp;cruces
+              </a>
+            </li>
+            <li>
+              <a href="#clasificacion"
+                ><span class="fa fa-th-list"></span>&nbsp;&nbsp;clasificación
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!-- CONTENIDO -->
+    <!--Contenido-->
+    <div class="container">
+      <section id="informacion" class="seccion">
+        <!--div class="Absolute-Center"-->
+        <h1><span class="fa fa-info-circle"></span> información</h1>
+        <div class="well well-lg caja">
+          <p class="text-justify">
+            <strong><em>¡</em>crúzame<em>!</em></strong> te ayuda a organizar un
+            torneo individual por parejas para 8 jugadores. Este tipo de torneo
+            se conoce en matemáticas como <em>torneo whist</em> aunque
+            últimamente se ha popularizado en deportes como el pádel con el
+            nombre de <em>americano</em>.
+          </p>
+          <p class="text-justify">
+            Se disputan en juegos que los se compite en parejas y su
+            característica básica es que en lugar de jugar con equipos
+            preestablecidos, estos van alternando y cada jugador tiene a cada
+            uno de los otros una vez como compañero y dos veces como rival. Al
+            jugar todos con todos este tipo de torneos se usan cuando los
+            jugadores no se conocen previamente o para establecer una
+            clasificación individual de los mismos.
+          </p>
+          <form class="form-inline text-justify">
+            Para 8 jugadores se necesitan 2 pistas en las que se juega
+            simultaneamente. Cada ronda se juega a
+            <strong>
+              <input
+                class="text-center form-inline input-sm strong"
+                type="number"
+                maxlength="2"
+                size="2"
+                id="puntos_victoria"
+                value="21"
+                name="puntos_victoria"
+              />
+            </strong>
+            puntos cambiando de pareja según el esquema y anotando el resultado.
+            Al finalizar obtenemos una clasificación individual en función de
+            las victorias y puntos de cada jugador.
+          </form>
+          <br />
+          <p class="text-justify">
+            En el modo normal se programan los cruces suponiendo que todos los
+            jugadores tienen el mismo nivel. Si se considera que existen
+            diferencias entre estos, es recomendable usar el esquema de Wiseman,
+            en la que los cruces se crearán buscando compensar estas diferencias
+            a la hora de emparejar a los jugadores. Para ello, ordena a los
+            jugadores de mejor (Jugador 1) a peor (Jugador 8).
+          </p>
+          <p class="text-justify">Seleccione el tipo de torneo (reinicio):</p>
+          <div class="text-center">
+            <div class="btn-group tipo_torneo" data-toggle="buttons">
+              <label class="btn btn-default active">
+                <input
+                  type="radio"
+                  name="tipo_torneo"
+                  id="torneo_normal"
+                  autocomplete="off"
+                  checked
+                />Normal
+              </label>
+              <label class="btn btn-default">
+                <input
+                  type="radio"
+                  name="tipo_torneo"
+                  id="torneo_weisman"
+                  autocomplete="off"
+                />Wiseman
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--/div-->
+      </section>
+
+      <section id="registro" class="seccion">
+        <!--div class="Absolute-Center"-->
+        <h1><span class="fa fa-user"></span> registro</h1>
+        <div class="well well-lg caja">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="A" class="control-label col-xs-5 col-sm-4"
+                >Jugador 1</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="0"
+                  id="A"
+                  placeholder="Jugador 1"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="B" class="control-label col-xs-5 col-sm-4"
+                >Jugador 2</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="1"
+                  id="B"
+                  placeholder="Jugador 2"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="C" class="control-label col-xs-5 col-sm-4"
+                >Jugador 3</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="2"
+                  id="C"
+                  placeholder="Jugador 3"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="D" class="control-label col-xs-5 col-sm-4"
+                >Jugador 4</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="3"
+                  id="D"
+                  placeholder="Jugador 4"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="E" class="control-label col-xs-5 col-sm-4"
+                >Jugador 5</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="4"
+                  id="E"
+                  placeholder="Jugador 5"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="F" class="control-label col-xs-5 col-sm-4"
+                >Jugador 6</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="5"
+                  id="F"
+                  placeholder="Jugador 6"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="G" class="control-label col-xs-5 col-sm-4"
+                >Jugador 7</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="6"
+                  id="G"
+                  placeholder="Jugador 7"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="H" class="control-label col-xs-5 col-sm-4"
+                >Jugador 8</label
+              >
+              <div class="col-xs-7 col-sm-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="7"
+                  id="H"
+                  placeholder="Jugador 8"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--/div-->
+      </section>
+      <section id="cruces" class="seccion">
+        <h1><span class="fa fa-random"></span> cruces</h1>
+        <div class="well well-lg caja">
+          <table
+            id="tabla_cruces"
+            class="display hover table-condensed table-striped text-center"
+            cellspacing="0"
+            width="100%"
+          >
+            <thead>
+              <tr>
+                <th>Ronda</th>
+                <th>Pista</th>
+                <th>
+                  <div
+                    class="col-xs-7 col-xs-offset-1 col-sm-2 col-sm-offset-2"
+                  >
+                    Pareja
+                  </div>
+                  <div class="col-xs-2 col-sm-3 col-sm-offset-2">Puntos</div>
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </section>
+
+      <section id="clasificacion" class="seccion">
+        <!--div class="Absolute-Center"-->
+        <h1><span class="fa fa-th-list"></span> clasificación</h1>
+        <div class="well well-lg caja">
+          <!--div>
+            Datos: 
+            <a data-column="0" class="toggle-vis">Jugador</a> - <a data-column="1" class="toggle-vis">Victorias</a> - <a data-column="2" class="toggle-vis">Balance</a> - <a data-column="3" class="toggle-vis">Puntos</a>
+          </div-->
+          <table
+            id="table_id"
+            class="display hover table-condensed table-striped text-center"
+            cellspacing="0"
+            width="100%"
+          >
+            <thead>
+              <tr>
+                <th>Jugador</th>
+                <th>Victorias</th>
+                <th>Balance</th>
+                <th>Puntos</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="text-center">
+            <div class="btn-group column-selector" data-toggle="buttons">
+              <!--label class="btn btn-default active">
+                <input type="checkbox" data-column="0" class="toggle-vis">Jugador
+              </label>
+              <label class="btn btn-default active">
+                <input type="checkbox" data-column="1" class="toggle-vis">Victorias
+              </label-->
+              <label class="btn btn-default active">
+                <input
+                  type="checkbox"
+                  data-column="2"
+                  class="toggle-vis"
+                />Balance
+              </label>
+              <label class="btn btn-default">
+                <input
+                  type="checkbox"
+                  data-column="3"
+                  class="toggle-vis"
+                />Puntos
+              </label>
+            </div>
+          </div>
+        </div>
+        <!--/div-->
+      </section>
+    </div>
+    <!-- class="container"-->
+
+    <!-- PIE -->
+
+    <!-- Librerías de JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script-->
+    <!--script src="js/bootstrap-table.min.js"></script-->
+    <!--script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script-->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <!--script src="//cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js"></script-->
+    <script src="js/dataTables.bootstrap.js"></script>
+    <!--Spinner para el número de puntos por victoria-->
+    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+
+    <script src="js/padel.min.js"></script>
   </body>
 </html>

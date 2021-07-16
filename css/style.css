@@ -1,0 +1,406 @@
+@import url(//fonts.googleapis.com/css?family=Oxygen:400,500,700italic&subset=latin,latin-ext);
+
+/* Generales */
+/* Tamaños del 100% para poder después adaptar el contenido de cada .sección a toda la pantalla */
+html {
+	height: 100%;
+	/*overflow: hidden;*/
+}
+
+body {
+	height: 100%;
+	/*overflow-y: hidden;*/
+	background-color: #EEE;
+	/*background: url("../img/grid.png") repeat scroll 0 0 transparent;*/
+	font-family: 'Oxygen';
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Oxygen';
+	letter-spacing: -0.25px;
+}
+
+body h1{
+	/*font-size: 30px;
+	font-weight: 700;
+	color: #444;*/
+	letter-spacing: -0.25px;
+}
+
+a{
+	color: #41A317;
+}
+
+a:hover, a:focus {
+    color: #41A317;
+}
+
+
+/* Barra de navegación */ 
+/* Adaptación de la barra en general */
+.navbar{
+	/*background-color: #EEE;*/
+	font-family: 'Oxygen',Tahoma,Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: -0.25px;
+	/*border-bottom: 5px solid #41A317;*/
+	/*border-bottom: 5px solid #41A317;*/
+	border-bottom: 0px solid #41A317;
+	/*-webkit-box-shadow: 0px 4px 16px #EEE;
+	box-shadow: 0px 4px 16px #EEE;*/
+	-webkit-box-shadow: -1px 5px 0px #41A317;
+	box-shadow: -1px 5px 0px #41A317;
+
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.60);
+
+	-webkit-transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+	transition: all 0.4s ease-in;
+}
+
+.navbar a{
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.navbar a:hover{
+	text-shadow: 0px 0px 5px #666;
+	color: #DDE;
+}
+
+.navbar-inverse .navbar-brand{
+	/*color: #444;*/
+	font-size: 35px;
+	text-shadow: -1px 2px 3px rgba(0, 0, 0, 0.60);
+	letter-spacing: 0px;
+	/*font-style: italic;*/
+	padding-right: 25%;
+	/*font-weight: 800;*/
+}
+
+.navbar-inverse .navbar-brand:focus{
+	color: #EEE;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus{
+	color: #EEE;
+}
+
+/*.navbar-brand a:hover{
+	text-shadow: 0px 0px 5px #FFF;
+	color: #fa0;
+}*/
+
+.navbar .glyphicon{
+	padding-right: 0.1em;
+}
+
+/*Botones*/
+.btn{
+	padding: 6px 20px;
+	border-width: 2px;
+	font-size: 13px;
+}
+
+.btn:active, .btn.active {
+    box-shadow: none;
+}
+
+/*Botones de selección de torneo*/
+
+/*Botones de selección de columnas*/
+.column-selector .btn{
+    font-size: 12px;
+}
+
+.column-selector{
+	margin-top: 20px;
+}
+
+/* Esta clase se añade a la barra creando una sombra cuando se baja en la página */
+.shadow{
+	webkit-box-shadow: 0px 4px 16px #999;
+	box-shadow: 0px 4px 16px #999;
+	border-bottom: 0px solid #1c93c6;
+
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+
+/* Contenido */
+
+
+.container{
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+/* Una clase "mágica" para crear un efecto grid sobre otra (contenedor, etc) */
+.grid {
+    background: url("../img/grid.png") repeat scroll 0 0 transparent;
+    bottom: 0;
+    left: 0;
+    /*position: absolute;*/
+    right: 0;
+    top: 0;
+    opacity: 1.0;
+}
+
+/* Cada sección de la web, que ocupará toda la pantalla mediante el min-height */
+.seccion {
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-top: 8%;
+	margin-bottom: 200px;
+	vertical-align: center;
+	min-height: 100%;
+	position: relative;
+}
+
+.seccion .glyphicon{
+
+}
+
+/*.Absolute-Center {
+	width: 100%;
+	height:60%;
+  	max-height: 90%;
+  	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}*/
+
+.well{
+	border: none;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.caja{
+	font-family: Oxygen;
+	/*padding-left: 5%;
+	padding-right: 5%;
+	line-height: 1.2;
+	color: #444;*/
+}
+
+.container .jumbotron{
+	padding: 0px;
+    padding-top: 6em;
+    /*margin-bottom: 0;
+    background-color: #EEE;*/
+}
+
+p{
+	color: #444;	
+}
+
+/*.form-control{
+	font-size: 16px;
+	font-weight: 400;
+}*/
+
+.input-group .form-control{
+   	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.input-sm, .form-group-sm .form-control {
+    padding: 1px 5px;
+}
+
+
+/*Ajuste milimétrico de la tabla de parejas...*/
+.form-cruces{
+	margin-bottom: 2px;
+}
+
+.form-cruces .control-label{
+	padding-top: 6px;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.form-cruces .col-xs-3{
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.form-cruces input{
+	padding: 2px;
+	font-weight: 800;
+	height: 25px;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.form-inline .form-group {
+    display: block;
+}
+
+/*Línea de agrupamiento de rondas*/
+.grupo-ronda{
+	text-align: left;
+	/*font-style: italic;*/
+	color: #888;
+	font-weight: bold;
+}
+
+
+textarea {
+   resize: none;
+   overflow: hidden;
+}
+
+table{
+	vertical-align: middle;
+}
+
+/*Disable the arrows of DataTables*/
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
+	background: none; cursor: default; text-align: center; 
+}
+
+/*Vertically centered for forms...*/
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+	vertical-align: middle;
+}
+
+/* Adaptar algunos tamaños y márgenes para pantallas pequeñas */
+@media all and (max-width: 479px){
+	.navbar-brand{
+		font-size: 25px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 0;
+	}
+	body h1{
+		font-size: 25px;
+	}
+	.caja{
+		font-size: 13px;
+	}
+	.seccion{
+		padding-top: 50px;
+	}
+}
+
+/* Placeholders color (vendor dependendant)*/
+/*
+.form-control::-webkit-input-placeholder { font-size: 12px; color: grey; font-weight: 900; letter-spacing: -1.5px;}
+.form-control:-moz-placeholder { font-size: 12px; color: grey; font-weight: 900; letter-spacing: -1.5px;} /* Firefox 18- */ 
+/*.form-control::-moz-placeholder { font-size: 12px; color: grey; font-weight: 900; letter-spacing: -1.5px;} /* Firefox 19+ */ 
+/*.form-control:-ms-input-placeholder { font-size: 12px; color: grey; font-weight: 900; letter-spacing: -1.5px; }*/
+/*********************************************
+ * ROLLING LINKS
+ *********************************************/
+
+a {
+    text-decoration: none;
+}
+   
+a:hover {
+    text-shadow: none;
+    border: none;
+    /*border-radius: 2px;*/
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus{
+	text-decoration: none;
+}
+
+a:active, a:focus {
+	outline: none;
+}
+
+.roll {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+
+    -webkit-perspective: 300px;
+       -moz-perspective: 300px;
+        -ms-perspective: 300px;
+            perspective: 300px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+        -ms-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+}
+.roll:hover {
+    background: none;
+    text-shadow: none;
+}
+.roll span {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+    pointer-events: none;
+
+    -webkit-transition: all 600ms ease;
+       -moz-transition: all 400ms ease;
+        -ms-transition: all 400ms ease;
+            transition: all 400ms ease;
+   
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+   
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+.roll:hover span {
+    /*background: #FFFFFF;*/
+    background: rgba(20,20,20,.50);
+
+    -webkit-transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+       -moz-transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+        -ms-transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+            transform: translate3d( 0px, 0px, -45px ) rotateX( 90deg );
+}
+.roll span:after {
+    content: attr(data-title);
+    text-decoration: none;
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+    white-space: nowrap;
+
+    color: white;
+    /*background: rgba(150,150,150,.10);*/
+    background: #36afc4;
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+        -ms-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+            transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
