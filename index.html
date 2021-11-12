@@ -108,7 +108,7 @@
                 class="text-center form-inline input-sm strong"
                 type="number"
                 maxlength="2"
-                size="2"
+                size="3"
                 id="puntos_victoria"
                 value="21"
                 name="puntos_victoria"
@@ -143,7 +143,7 @@
                 <input
                   type="radio"
                   name="tipo_torneo"
-                  id="torneo_weisman"
+                  id="torneo_wiseman"
                   autocomplete="off"
                 />Wiseman
               </label>
@@ -159,7 +159,7 @@
         <div class="well well-lg caja">
           <form class="form-horizontal" role="form">
             <div class="form-group">
-              <label for="A" class="control-label col-xs-5 col-sm-4"
+              <label for="A" class="control-label col-xs-5 col-sm-6"
                 >Jugador 1</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -168,12 +168,13 @@
                   class="form-control"
                   name="0"
                   id="A"
+                  data-initial-value="A"
                   placeholder="Jugador 1"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="B" class="control-label col-xs-5 col-sm-4"
+              <label for="B" class="control-label col-xs-5 col-sm-6"
                 >Jugador 2</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -182,12 +183,13 @@
                   class="form-control"
                   name="1"
                   id="B"
+                  data-initial-value="B"
                   placeholder="Jugador 2"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="C" class="control-label col-xs-5 col-sm-4"
+              <label for="C" class="control-label col-xs-5 col-sm-6"
                 >Jugador 3</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -196,12 +198,13 @@
                   class="form-control"
                   name="2"
                   id="C"
+                  data-initial-value="C"
                   placeholder="Jugador 3"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="D" class="control-label col-xs-5 col-sm-4"
+              <label for="D" class="control-label col-xs-5 col-sm-6"
                 >Jugador 4</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -210,12 +213,13 @@
                   class="form-control"
                   name="3"
                   id="D"
+                  data-initial-value="D"
                   placeholder="Jugador 4"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="E" class="control-label col-xs-5 col-sm-4"
+              <label for="E" class="control-label col-xs-5 col-sm-6"
                 >Jugador 5</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -224,12 +228,13 @@
                   class="form-control"
                   name="4"
                   id="E"
+                  data-initial-value="E"
                   placeholder="Jugador 5"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="F" class="control-label col-xs-5 col-sm-4"
+              <label for="F" class="control-label col-xs-5 col-sm-6"
                 >Jugador 6</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -238,12 +243,13 @@
                   class="form-control"
                   name="5"
                   id="F"
+                  data-initial-value="F"
                   placeholder="Jugador 6"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="G" class="control-label col-xs-5 col-sm-4"
+              <label for="G" class="control-label col-xs-5 col-sm-6"
                 >Jugador 7</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -252,12 +258,13 @@
                   class="form-control"
                   name="6"
                   id="G"
+                  data-initial-value="G"
                   placeholder="Jugador 7"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="H" class="control-label col-xs-5 col-sm-4"
+              <label for="H" class="control-label col-xs-5 col-sm-6"
                 >Jugador 8</label
               >
               <div class="col-xs-7 col-sm-3">
@@ -266,11 +273,15 @@
                   class="form-control"
                   name="7"
                   id="H"
+                  data-initial-value="H"
                   placeholder="Jugador 8"
                 />
               </div>
             </div>
           </form>
+          <button id="sortear" type="button" class="btn btn-default">Sortear orden</button>
+          <button id="pistas" type="button" class="btn btn-default">Cambiar pistas</button>
+          <button id="resetear" type="button" class="btn btn-default">Resetear</button>
         </div>
         <!--/div-->
       </section>

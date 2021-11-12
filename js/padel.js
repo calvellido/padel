@@ -162,7 +162,7 @@ Partido.prototype.crearFormulario = function () {
     j2_nombre +
     "</label>\
 					<div class='col-xs-3 col-sm-3'>\
-						<input class='form-control text-center' type='number' maxlength='2' size='2' data-ronda='" +
+						<input class='form-control text-center' type='number' maxlength='2' size='3' data-ronda='" +
     this.ronda +
     "' data-rivales='" +
     this.jugador3 +
@@ -185,7 +185,7 @@ Partido.prototype.crearFormulario = function () {
     j4_nombre +
     "</label>\
 					<div class='col-xs-3 col-sm-3'>\
-						<input class='form-control text-center' type='number' maxlength='2' size='2' data-ronda='" +
+						<input class='form-control text-center' type='number' maxlength='2' size='3' data-ronda='" +
     this.ronda +
     "' data-rivales='" +
     this.jugador1 +
@@ -311,7 +311,13 @@ function cargarClasif() {
 $("#registro").on("change", ":input", function () {
   var jugador_letra = $(this).attr("id");
   var jugador_num = $(this).attr("name");
-  var jugador_nombre = (jugadores[jugador_num].nombre = $(this).val());
+  var oldValue = $(this).attr("data-initial-value");
+  var newVal = $(this).val();
+  var jugadorModificado = jugadores.filter(function(jugador) {
+    return jugador.nombre === oldValue;
+  })[0];
+  jugadorModificado.nombre = newVal;
+  $(this).attr('data-initial-value', newVal);
 
   $("#table_id").DataTable().destroy();
   cargarClasif();
@@ -358,9 +364,76 @@ function cambiarTorneo(datos) {
   cargarClasif();
 }
 
+function sortearOrden() {
+  var numPermutaciones = Math.floor(Math.random() * 8) + 8;
+
+  for (var i = 0; i < numPermutaciones; ++i) {
+    var numeroAleatorioA = Math.floor(Math.random() * 8);
+    var numeroAleatorioB = Math.floor(Math.random() * 8);
+  
+    var nombreInicial = jugadores[numeroAleatorioA].nombre;
+    jugadores[numeroAleatorioA].nombre = jugadores[numeroAleatorioB].nombre
+    jugadores[numeroAleatorioB].nombre = nombreInicial;
+  }
+
+  borrar_puntos_todos();
+  $("#tabla_cruces").DataTable().destroy();
+  cargarCruces();
+  $("#table_id").DataTable().destroy();
+  cargarClasif();
+}
+
+function cambiarPistas() {
+  for (var i = 1; i < jugadores.length; ++i) {
+    var partidosPista = torneo.filter(function(partido) {
+      return (partido.ronda === i);
+    });
+
+    var pistaInicial = partidosPista[0].cancha;
+    partidosPista[0].cancha = partidosPista[1].cancha
+    partidosPista[1].cancha = pistaInicial;
+  }
+
+  borrar_puntos_todos();
+  $("#tabla_cruces").DataTable().destroy();
+  cargarCruces();
+  $("#table_id").DataTable().destroy();
+  cargarClasif();
+}
+
+function resetear() {
+  for (var i = 0; i < jugadores.length; ++i) {
+    jugadores[i].nombre = $("#registro input[name='" + i + "']").val()
+  }
+
+  for (var i = 1; i < jugadores.length; ++i) {
+    var partidosPista = torneo.filter(function(partido) {
+      return (partido.ronda === i);
+    });
+
+    partidosPista[0].cancha = 1
+    partidosPista[1].cancha = 2;
+  }
+
+  borrar_puntos_todos();
+  $("#tabla_cruces").DataTable().destroy();
+  cargarCruces();
+  $("#table_id").DataTable().destroy();
+  cargarClasif();
+}
+
 $(function () {
   $(".tipo_torneo .btn").click(function () {
     cambiarTorneo($(this).children("input").attr("id"));
+  });
+  $("#sortear").click(function () {
+    sortearOrden();
+  });
+  $("#pistas").click(function () {
+    cambiarPistas();
+  });
+  $("#resetear").click(function () {
+    resetear();
   });
 });
 

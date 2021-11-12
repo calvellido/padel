@@ -1,0 +1,14 @@
+01 1 A+B:C+D
+01 2 E+F:G+H
+02 1 A+C:E+G
+02 2 B+D:F+H
+03 1 B+C:F+G
+03 2 A+D:E+H
+04 1 A+E:B+F
+04 2 C+G:D+H
+05 1 B+E:D+G
+05 2 A+F:C+H
+06 1 B+H:C+E
+06 2 A+G:D+F
+07 1 C+F:D+E
+07 2 A+H:B+G
